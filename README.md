@@ -5,7 +5,7 @@ Demo project for HasiCorp Vault with Spring Cloud.
 
 - Run the server
 vault server -dev
-	- with dev root token id
+	- with dev root token id  
 	vault server -dev --dev-root-token-id="00000000-0000-0000-0000-000000000000"
 	- with custom config file (.hcl)
 	vault server -config=path\of\vaultHCLfile\vault.hcl
