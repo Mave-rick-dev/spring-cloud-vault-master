@@ -1,0 +1,16 @@
+server:
+    port: 8002
+spring:
+    datasource:
+        initialization-mode: always
+        password: ${dbpassword}
+        platform: postgres
+        url: jdbc:postgresql://172.16.99.100:5432/taml_datum
+        username: ${dbusername}
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        hibernate:
+            ddl-auto: none
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect

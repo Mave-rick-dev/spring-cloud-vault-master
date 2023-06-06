@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spring-vault-demo
+  cloud:
+    vault:
+      host: localhost
+      port: 8200
+      scheme: http
+      token: hvs.kowx9z3VgFl5cs0w7JqqCVMF
