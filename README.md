@@ -33,8 +33,8 @@ vault operator unseal **unseal-key**
 vault secrets enable -path=dbcredentials/ kv
 
 - add new key-value secred in new path 'dbcredentials'  
-vault kv put dbcredentials/spring-vault-demo data='{ "dbusername": "postgres", "dbpassword": "datum@123"}'  
-vault kv put dbcredentials/spring-vault-demo example.username=postgres example.password=datum@123
+vault kv put dbcredentials/spring-vault-demo data='{ "dbusername": "postgres", "dbpassword": "password@1234"}'  
+vault kv put dbcredentials/spring-vault-demo example.username=postgres example.password=password@1234
 
 - get the secrets from the secret engine's path  
 vault kv get dbcredentials/spring-vault-demo
